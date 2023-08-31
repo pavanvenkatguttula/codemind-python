@@ -1,11 +1,12 @@
 n=int(input())
-p=0
+rev=0
 q=n
-while q!=0:
-    r=q%10
-    p=p*10+r
-    q=q//10
-if p==n:
-    print("Palindrome")
+while(q!=0):
+   r=q%10
+   rev=rev*10+r
+   q=q//10
+if rev==n:
+     print("True")
 else:
-    print("Not Palindrome")
+    print("False")
+    
